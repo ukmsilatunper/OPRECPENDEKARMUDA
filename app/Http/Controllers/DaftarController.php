@@ -48,9 +48,9 @@ class DaftarController extends Controller
             if (!is_numeric($number)) {
                 return back()->with('toast_error', 'Input yang anda masukan bukan nomor hp')->withInput();
         }
-        if ($request->file('image')) {
-            $validatedData['image'] = $request->file('image')->store('profile-images');
-        }
+        // if ($request->file('image')) {
+        //     $validatedData['image'] = $request->file('image')->store('profile-images');
+        // }
 
         // $validatedData['user_id'] = auth()->user()->id;
         // $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);

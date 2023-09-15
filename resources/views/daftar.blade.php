@@ -6,6 +6,11 @@
   <div class="col-lg-5"> 
     <main class="form-registration w-100 m-auto text-center">       
       <img src="img/silat.png" alt="silat" width="200" class="rounded-circle border border-3 border-dark mb-3" />
+      @if (session()->has('toast_error'))
+      <div class="alert alert-danger" role="alert">
+        {{ session('toast_error') }} 🤬
+      </div>
+      @endif
       <h1 class="h3 mb-3 fw-normal">Pendaftaran Calon Anggota Baru UKM Seni Bela Diri Pencak Silat</h1>
       <form action="/daftar" method="POST">
         @csrf

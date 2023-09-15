@@ -4,10 +4,13 @@
 <section class="jumbotron text-center pt-2" style="background-color: #F4C400">
   <img src="img/silat.png" alt="Rifal Kurniawan" width="300" class="rounded-circle border border-3 border-dark mb-5" />
   <h1 class="display-4 fw-bold fs-3">UNIT KEGIATAN MAHASISWA SENI BELA DIRI PENCAK SILAT PADJAJARAN</h1>
-  <h2 class="display-4 fs-3 fw-bold text-light mb-5">Universitas Perjuangan Tasikmalaya</h2>
+  <h2 class="display-4 fs-3 fw-bold text-light mb-3">Universitas Perjuangan Tasikmalaya</h2>
   <div class="row justify-content-center mb-3">
-    <div class="col">
+    <div class="col-lg-6 text-center">
       @if(session()->has('toast_success'))
+      <div class="alert alert-success" role="alert">
+        {{ session('toast_success') }} ✓✓
+      </div>
       <h6 class="fw-bold text-center">Silahkan klik tombol dibawah ini untuk masuk grup whatsapp <br> ⬇️⬇️⬇️⬇️⬇️⬇️</h6>
       <a href="https://chat.whatsapp.com/CbcD0JHM0vK875yLyTfTPE" class="btn btn-success mx-auto mb-3">Join Grup Whatsapp</a>
       @endif
